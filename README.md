@@ -1,18 +1,14 @@
-# Quartz v4
+# Personal Quartz 
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+## Build and preview
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+`npx quartz build --serve`
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+## Run with docker
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+`docker run --restart=always -d -itp 1111:8080 -v $(pwd)/content:/usr/src/app/content $(docker build -q .)`
 
-## Sponsors
+## Quartz 4 documentation
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+Read the documentation and get started: https://quartz.jzhao.xyz/
+
